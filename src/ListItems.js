@@ -1,10 +1,18 @@
 import React ,{useContext,useReducer,useRef}from "react"
-import Item from "./Item"
+import {ItemContext} from "./context"
+import Checkbox from '@material-ui/core/Checkbox';
 
-const ListItems = (props)=>{
 
+const ListItems = ({id,text,check})=>{
+    const item = useContext(ItemContext);
     return(
-        <div></div>
+        <div className="list-items">
+            <div className="single-item">{text}</div>
+            <label className="myCheckbox">
+            <Checkbox color="secondary" type="checkbox" checked={check} onChange={()=>item.check(id)}/>
+            </label>
+            <button className="delete" onClick={()=>item.deleteItem(id)}>Delete</button>
+        </div>
         
     )
 }

@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+p,a,h1,h2,h3,button,div{
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root{
+    display: table;
+    margin: auto;
+    margin-top: 5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+  text-decoration: none;
+  font-size:30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type="text"]{
+  box-shadow:none;
+  outline:none;
+  height:30px;
+  width:200px;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom:1px solid black;
+}
+.add-button:focus,.addbutton:active, .addbutton:hover{
+  border: 1px solid #F50C57;
+  outline: none;
+}
+button{
+  outline: none;
+}
+.add-button{
+  width: 111px;
+  height: 36px;
   color: white;
+  font-weight: inherit;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  background: #FF6F91;
+  margin-left: 15px;
+  border: 1px solid #FF6F91;
+}
+.single-item{
+  float:left;
+  height: 30px;
+  padding-top: 11px;
+}
+.list-items{
+  margin-top:10px
+}
+input.check-box{
+  width:50px;
+  height:50px
+}
+.delete{
+  width: 80px;
+  height: 30px;
+  font-weight:bold;
+  color: white;
+  font-weight: inherit;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  background: #F50C57;
+  margin-left: 15px;
+  border: 1px solid #F50C57;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
